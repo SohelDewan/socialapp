@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-clone-Home-page</title>
+    <link rel="icon" href="images/fav-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo" alt="logo">
+            <ul>
+                <li><img src="images/notification.png" alt="image"></li>
+                <li><img src="images/inbox.png" alt="image"></li>
+                <li><img src="images/video.png" alt="image"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="image">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="user-icon online" onclick="settingMenuToggle()">
+                <img src="images/profile-pic.png" alt="image">
+            </div>
+        </div>
+        </div>
+        <!-- -----------settings-menu------------- -->
+        <div class="settings-menu">
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <div class="user-profile">
+                <img src="images/profile-pic.png" alt="image">
+                <div>
+                    <p>Sohel Dewan</p>
+                    <a href="profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <div class="user-profile">
+                <img src="images/feedback.png" alt="image">
+                <div>
+                    <p>Give feed back</p>
+                    <a href="#">Help us to improve the new design</a>
+                </div>
+            </div>
+            <hr>
+            <div class="settings-links">
+                <img src="images/setting.png" class="setting-icon" alt="image">
+                <a href="#">Settings & Privacy <img src="images/arrow.png" width="9px" alt="image"></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/help.png" alt="image" class="setting-icon">
+                <a href="#">Help & Support <img src="images/arrow.png" width="9px" alt="image"></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/display.png" alt="image" class="setting-icon">
+                <a href="#">Display & Accessibility <img src="images/arrow.png" width="9px" alt="image"></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/logout.png" alt="image" class="setting-icon">
+                <a href="#">Logout<img src="images/arrow.png" width="9px" alt="image"></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- -----------left-sidebar------------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png">Latest News</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/group.png">Groups</a>
+                <a href="#"><img src="images/marketplace.png">Marketplace</a>
+                <a href="#"><img src="images/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your shortcut</p>
+                <a href="#"><img src="images/shortcut-1.png" alt="image">
+                    <p>Web Developers</p>
+                </a>
+                <a href="#"><img src="images/shortcut-2.png" alt="image">
+                    <p>Web Design Course</p>
+                </a>
+                <a href="#"><img src="images/shortcut-3.png" alt="image">
+                    <p>Full Stack Development</p>
+                </a>
+                <a href="#"><img src="images/shortcut-4.png" alt="image">
+                    <p>Website Experts</p>
+                </a>
+            </div>
+        </div>
+        <!-- -----------main-content------------- -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story0">
+                    <img src="images/upload.png" alt="image">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story1">
+                    <img src="images/member-1.png" alt="image">
+                    <p>Alison</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-2.png" alt="image">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-3.png" alt="image">
+                    <p>Somana</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-4.png" alt="image">
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="write-post-content">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="image">
+                    <div>
+                        <p>Sohel Dewan</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea placeholder="What's on your mind, John?" rows="2"></textarea>
+                    <div class="add-post-link">
+                        <a href="#"><img src="images/live-video.png" alt="image">Live Video</a>
+                        <a href="#"><img src="images/photo.png" alt="image">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png" alt="image">Filling Activity</a>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------Post container part start-------------------- -->
+            <div class="post-container">
+                <div class="user-profile">
+                    <div class="position">
+                        <img src="images/profile-pic.png" alt="image">
+                        <div>
+                            <p>Sohel Dewan</p>
+                            <span>May 24 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">To watch more tutorials on web development, subscribe <span>@My tutorials</span>
+                    youtube channel <a href="#">#My tutorials</a><a href="#">#Web-development</a>
+                </p>
+                <img src="images/feed-image-1.png" class="post-img" alt="image">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png" alt="image"> 120</div>
+                        <div><img src="images/comments.png" alt="image"> 45</div>
+                        <div><img src="images/share.png" alt="image"> 25</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="images/profile-pic.png" alt="image"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------Post container 2nd part start-------------------- -->
+            <div class="post-container">
+                <div class="user-profile">
+                    <div class="position">
+                        <img src="images/profile-pic.png" alt="image">
+                        <div>
+                            <p>Sohel Dewan</p>
+                            <span>April 24 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Like and share this video with friends, tag<span>@My tutorials</span> facebook page
+                    on your post. Ask your doubt in the comments <a href="#">#My tutorials</a><a
+                        href="#">#YouTubeChannel</a>
+                </p>
+                <img src="images/feed-image-2.png" class="post-img" alt="image">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png" alt="image"> 120</div>
+                        <div><img src="images/comments.png" alt="image"> 45</div>
+                        <div><img src="images/share.png" alt="image"> 25</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="images/profile-pic.png" alt="image"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <div class="position">
+                        <img src="images/profile-pic.png" alt="image">
+                        <div>
+                            <p>Sohel Dewan</p>
+                            <span>March 14 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Like and share this video with friends, tag<span>@My tutorials</span> facebook page
+                    on your post. Ask your doubt in the comments <a href="#">#My tutorials</a><a
+                        href="#">#YouTubeChannel</a>
+                </p>
+                <img src="images/feed-image-3.png" class="post-img" alt="image">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png" alt="image"> 131</div>
+                        <div><img src="images/comments.png" alt="image"> 127</div>
+                        <div><img src="images/share.png" alt="image"> 65</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="images/profile-pic.png" alt="image"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <div class="position">
+                        <img src="images/profile-pic.png" alt="image">
+                        <div>
+                            <p>Sohel Dewan</p>
+                            <span>February 01 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Like and share this video with friends, tag<span>@My tutorials</span> facebook page
+                    on your post. Ask your doubt in the comments <a href="#">#My tutorials</a><a
+                        href="#">#YouTubeChannel</a>
+                </p>
+                <img src="images/feed-image-4.png" class="post-img" alt="image">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like.png" alt="image"> 125</div>
+                        <div><img src="images/comments.png" alt="image"> 41</div>
+                        <div><img src="images/share.png" alt="image"> 51</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="images/profile-pic.png" alt="image"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <div class="position">
+                        <img src="images/profile-pic.png" alt="image">
+                        <div>
+                            <p>Sohel Dewan</p>
+                            <span>January 04 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Like and share this video with friends, tag<span>@My tutorials</span> facebook page
+                    on your post. Ask your doubt in the comments <a href="#">#My tutorials</a><a
+                        href="#">#YouTubeChannel</a>
+                </p>
+                <img src="images/feed-image-5.png" class="post-img" alt="image">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like.png" alt="image"> 210</div>
+                        <div><img src="images/comments.png" alt="image"> 35</div>
+                        <div><img src="images/share.png" alt="image"> 15</div>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="images/profile-pic.png" alt="image"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------Post container part end-------------------- -->
+            <button type="button" class="load-btn">Load More</button>
+        </div>
+
+        <!-- -----------right-sidebar------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Event</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>April</span>
+                </div>
+                <div class="right-event">
+                    <h4><i class="fa-solid fa-location-dot"></i>Wilson Tech Park</h4>
+                    <p>Social Media</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4><i class="fa-solid fa-location-dot"></i>Wilson Tech Park</h4>
+                    <p>Mobile Marketing</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads" alt="image">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Somana Rose</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="footer">
+        <p>Copyright@2023, My Tutorials #YouTubeChannel</p>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/406d6beb46.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
